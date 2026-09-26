@@ -3,7 +3,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-INSTANCE = os.getenv("INSTANCE", "unknown")
+INSTANCE = os.getenv("HOSTNAME", "unknown")
 
 @app.get("/")
 def hello():
